@@ -50,8 +50,8 @@
 }
 
 .user-img img {
-  width: 400px;
-  height: 400px;
+  width: 25rem;
+  height: 25rem;
   border-width: 4px;
   border-style: solid;
   border-color: var(--primary-color-1);
