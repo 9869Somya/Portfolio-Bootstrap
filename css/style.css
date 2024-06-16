@@ -18,8 +18,8 @@
     backdrop-filter: blur(10px);
   }
   .user-img img {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     border-width: 4px;
     border-style: solid;
     border-color: var(--primary-color-1);
