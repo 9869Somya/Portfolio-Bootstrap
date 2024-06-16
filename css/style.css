@@ -35,7 +35,7 @@
   border-radius: 50%;
   background-image: var(--primary-color);
   position: absolute;
-  top: -10rem;
+  top: -15rem;
   right: 10rem;
   z-index: 1;
 }
