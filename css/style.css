@@ -50,8 +50,8 @@
 }
 
 .user-img img {
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   border-width: 4px;
   border-style: solid;
   border-color: var(--primary-color-1);
@@ -59,7 +59,7 @@
   object-fit: cover;
   position: relative;
   z-index: 2;
-  left: 7%;
+  left: 10%;
 }
 .user-intro h2 {
   font-size: 50px;
@@ -67,9 +67,6 @@
 
 .intro {
   margin-top: 150px;
-}
-.intro-card {
-  margin-left: 100px;
 }
 .btn-primary {
   background-image: var(--primary-color);
