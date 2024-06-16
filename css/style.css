@@ -59,7 +59,7 @@
   object-fit: cover;
   position: relative;
   z-index: 2;
-  left: 10%;
+  margin-left: 5%;
 }
 .user-intro h2 {
   font-size: 50px;
