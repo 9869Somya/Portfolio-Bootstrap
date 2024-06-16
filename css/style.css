@@ -17,6 +17,17 @@
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
   }
+  .user-img img {
+    width: 20rem;
+    height: 20rem;
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--primary-color-1);
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+  }
 }
 .circle {
   width: 150px;
