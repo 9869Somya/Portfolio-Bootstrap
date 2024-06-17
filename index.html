@@ -518,11 +518,7 @@
               </p>
             </div>
             <div class="col-lg-8">
-              <form
-                class="row g-lg-3 gy-3"
-                method="get"
-                onsubmit="validate(event)"
-              >
+              <form class="row g-lg-3 gy-3" method="get">
                 <div class="form-group col-md-6">
                   <input
                     type="text"
@@ -565,7 +561,7 @@
                 </div>
                 <button
                   class="btn btn-primary rounded-pill fs-4"
-                  onclick="sendMail()"
+                  onclick="sendMail(event)"
                 >
                   Contact me
                 </button>

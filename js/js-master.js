@@ -31,7 +31,7 @@ function toggleTheme() {
   }
 }
 
-function validate(e) {
+function sendMail(e) {
   let name = document.querySelector("#name").value;
   let mobile = document.querySelector("#mobile").value;
   let email = document.querySelector("#email").value;
@@ -84,42 +84,27 @@ function validate(e) {
     document.querySelector("#message").style.border = "1px solid black";
   }
 
+  e.preventDefault();
   if (error) {
-    e.preventDefault(); //preventDefault behaviuor of a event
+  } else {
+    var params = {
+      from_name: document.getElementById("name").value,
+      mobile_no: document.getElementById("mobile").value,
+      email_id: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+
+    emailjs
+      .send("service_f5tht34", "template_8ry6bx8", params)
+      .then(function (res) {
+        console.log("Success! " + res.status);
+      })
+      .catch(function (err) {
+        console.log("Failed to send message. Please try again.");
+      });
+    document.querySelector("#name").value = "";
+    document.querySelector("#mobile").value = "";
+    document.querySelector("#email").value = "";
+    document.querySelector("#message").value = "";
   }
-  //  else {
-  //   var params = {
-  //     from_name: document.getElementById("name").value,
-  //     mobile_no: document.getElementById("mobile").value,
-  //     email_id: document.getElementById("email").value,
-  //     message: document.getElementById("message").value,
-  //   };
-
-  //   emailjs
-  //     .send("service_f5tht34", "template_8ry6bx8", params)
-  //     .then(function (res) {
-  //       console.log("Success! " + res.status);
-  //     })
-  //     .catch(function (err) {
-  //       console.log("Failed to send message. Please try again.");
-  //     });
-  // }
-}
-
-function sendMail() {
-  var params = {
-    from_name: document.getElementById("name").value,
-    mobile_no: document.getElementById("mobile").value,
-    email_id: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-  };
-
-  emailjs
-    .send("service_f5tht34", "template_8ry6bx8", params)
-    .then(function (res) {
-      console.log("Success! " + res.status);
-    })
-    .catch(function (err) {
-      console.log("Failed to send message. Please try again.");
-    });
 }
