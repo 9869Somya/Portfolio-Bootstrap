@@ -388,3 +388,93 @@ h4 {
   height: 100%;
   object-fit: cover;
 }
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 991px) {
+  /* Adjust the user image size */
+  .user-img img {
+    width: 200px; /* Smaller image for mobile */
+    height: 200px;
+    border-width: 3px;
+  }
+
+  /* Adjust the font sizes for smaller screens */
+  .user-intro h2,
+  .user-intro h4 {
+    font-size: 30px; /* Smaller heading size for mobile */
+  }
+
+  .user-name {
+    font-size: 40px; /* Reduce the font size of the name */
+  }
+
+  /* Adjust the circle size and position for smaller screens */
+  .circle {
+    width: 100px;
+    height: 100px;
+    top: -8rem;
+    right: 5rem;
+  }
+
+  .empty-circle {
+    width: 200px;
+    height: 200px;
+    top: -18rem;
+    right: 12rem;
+  }
+
+  /* Ensure intro section adjusts properly */
+  .intro {
+    margin-top: 50px; /* Less margin for smaller screens */
+  }
+
+  /* Ensure the quick links are aligned properly */
+  .quick-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* Hire me button adjustments */
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px; /* Adjust button size */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Further reduce the image for smaller screens */
+  .user-img img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Font adjustments for very small screens */
+  .user-intro h2,
+  .user-intro h4 {
+    font-size: 24px;
+  }
+
+  .user-name {
+    font-size: 30px;
+  }
+
+  /* Adjust circles further for small screens */
+  .circle {
+    width: 80px;
+    height: 80px;
+    top: -6rem;
+    right: 4rem;
+  }
+
+  .empty-circle {
+    width: 150px;
+    height: 150px;
+    top: -14rem;
+    right: 10rem;
+  }
+
+  /* Adjust intro text spacing */
+  .intro {
+    margin-top: 30px;
+  }
+}
