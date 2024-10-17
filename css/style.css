@@ -335,16 +335,16 @@ h4 {
 }
 
 .scrollable-container::-webkit-scrollbar {
-  height: 10px;
+  height: 5px;
 }
 
 .scrollable-container::-webkit-scrollbar-thumb {
-  background-color: #2e3134;
+  background-color: var(--primary-color-2);
   border-radius: 10px;
 }
 
 .scrollable-container::-webkit-scrollbar-track {
-  background-color: #2b2626;
+  background-color: var(--primary-color-1);
 }
 
 @media (max-width: 768px) {
@@ -389,26 +389,22 @@ h4 {
   object-fit: cover;
 }
 
-/* Mobile responsiveness adjustments */
 @media (max-width: 991px) {
-  /* Adjust the user image size */
   .user-img img {
-    width: 200px; /* Smaller image for mobile */
+    width: 200px;
     height: 200px;
     border-width: 3px;
   }
 
-  /* Adjust the font sizes for smaller screens */
   .user-intro h2,
   .user-intro h4 {
-    font-size: 30px; /* Smaller heading size for mobile */
+    font-size: 30px;
   }
 
   .user-name {
-    font-size: 40px; /* Reduce the font size of the name */
+    font-size: 40px;
   }
 
-  /* Adjust the circle size and position for smaller screens */
   .circle {
     width: 100px;
     height: 100px;
@@ -423,32 +419,28 @@ h4 {
     right: 12rem;
   }
 
-  /* Ensure intro section adjusts properly */
   .intro {
-    margin-top: 50px; /* Less margin for smaller screens */
+    margin-top: 50px;
   }
 
-  /* Ensure the quick links are aligned properly */
   .quick-links {
     justify-content: center;
     margin-top: 20px;
   }
 
-  /* Hire me button adjustments */
   .btn {
     font-size: 14px;
-    padding: 10px 20px; /* Adjust button size */
+    padding: 10px 20px;
   }
 }
 
 @media (max-width: 768px) {
-  /* Further reduce the image for smaller screens */
   .user-img img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
+    top: 40px;
   }
 
-  /* Font adjustments for very small screens */
   .user-intro h2,
   .user-intro h4 {
     font-size: 24px;
@@ -458,10 +450,9 @@ h4 {
     font-size: 30px;
   }
 
-  /* Adjust circles further for small screens */
   .circle {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     top: -6rem;
     right: 4rem;
   }
@@ -473,7 +464,6 @@ h4 {
     right: 10rem;
   }
 
-  /* Adjust intro text spacing */
   .intro {
     margin-top: 30px;
   }
